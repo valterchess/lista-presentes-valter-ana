@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #9cd0fa;
+    background-color: #27343e;
 }
 
 
@@ -31,6 +31,8 @@ body {
 }
 .score{
     font-size: medium;
+    color: #fff;
+    padding-bottom: 2rem;
 }
 
 .genius{
@@ -46,6 +48,7 @@ body {
     width: 700px;
     height: 700px;
     cursor: pointer;
+    box-shadow: 0 0 22px 22px  rgba(0, 0, 0, 0.379);
 }
 
 .green{

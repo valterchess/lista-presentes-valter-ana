@@ -16,10 +16,8 @@ const totalScore = document.querySelector('.score');
 
 //cria ordem aleaoria de cores
 let shuffleOrder = () => {
-    let colorOrder = Math.floor(Math.random() * 4);
-    order[order.length] = colorOrder;
+    order[order.length] = Math.floor(Math.random() * 4);
     clickedOrder = [];
-
     for (let i in order) {
         let elementColor = createColorElement(order[i]);
         lightColor(elementColor, Number(i) + 1);
@@ -73,10 +71,10 @@ let createColorElement = (color) => {
 
     //função para próximo nível do jogo
     let nextLevel = () => {
+        totalScore.innerHTML = `Score: ${score}`;
         score++;
         // inserir mais um em um elemento 
         shuffleOrder();
-        totalScore.innerHTML = `score: ${score}`;
     }
 
     // função para game-over
@@ -89,6 +87,7 @@ let createColorElement = (color) => {
     }
 
     let playGame = () => {
+
         score = 0;
         nextLevel();
     }
