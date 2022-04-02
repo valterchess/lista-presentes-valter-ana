@@ -11,8 +11,7 @@ const red = document.querySelector('.red');
 const yellow = document.querySelector('.yellow');
 const blue = document.querySelector('.blue');
 const play = document.querySelector('.play');
-
-
+const totalScore = document.querySelector('.score');
 
 
 //cria ordem aleaoria de cores
@@ -49,7 +48,6 @@ let checkOrder = () => {
     }
 
     if (clickedOrder.length == order.length) {
-        alert(`Pontuação: ${score}\nVocê acertou! Iniciando próximo nível!`);
         nextLevel();
     }
 }
@@ -78,6 +76,7 @@ let createColorElement = (color) => {
         score++;
         // inserir mais um em um elemento 
         shuffleOrder();
+        totalScore.innerHTML = `score: ${score}`;
     }
 
     // função para game-over
@@ -91,7 +90,6 @@ let createColorElement = (color) => {
 
     let playGame = () => {
         score = 0;
-
         nextLevel();
     }
 
@@ -102,6 +100,5 @@ let createColorElement = (color) => {
     blue.onclick = () => click(3);
     
     // inicio do jogo
-    play.onclick = () => {
-        playGame(); 
-    }
+    play.onclick = () => {playGame()
+         score = 0};

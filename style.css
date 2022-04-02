@@ -29,6 +29,9 @@ body {
 .play:hover{
     transform: scale(120%);
 }
+.score{
+    font-size: medium;
+}
 
 .genius{
     border: 2px solid;
