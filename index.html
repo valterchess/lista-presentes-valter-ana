@@ -1,27 +1,375 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Genesis - Game</title>
-</head>
-<body>
-    
-    <div class="main__game">
-        <h2></h2>
-        <div class="play">
-            <h3>Iniciar</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="https://avatars.githubusercontent.com/u/53379816?s=40&v=4"
+      type="image/x-icon"
+    />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Valter Silva - Java Developer</title>
+  </head>
+
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bx-book"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">
+                <i class="bx bx-list-ul"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="bx bx-message-square-dots"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <h4 class="score"></h4>
-        <div class="genius">
-            <div class="blue"></div>
-            <div class="yellow"></div>
-            <div class="red"></div>
-            <div class="green"></div>
+        <!-- Theme change button -->
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <img src="./assets/img/qr-code.jpeg" alt="" class="about__img" />
+          <div class="about__data">
+            <div class="about__info">
+              <img
+                class="info_img"
+                src="/assets/img/Fern Country Wedding Facebook Cover.png"
+                alt=""
+              />
+            </div>
+            <span class="about__description">
+              Aqui abaixo temos uma lista de presentes que vocês podem nos dar
+              ou então se preferirem podem fazer um Pix escaneando o QR Code ao
+              lado
+            </span>
+          </div>
         </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+      </section>
+
+      <!--=============== WORK ===============-->
+      <section class="work section" id="work">
+        <h2 class="section__title">LISTA DE PRESENTES</h2>
+        <div class="work__filters">
+          <span class="work__item active-work" data-filter="all">todos</span>
+          <span class="work__item" data-filter=".api">Cozinha</span>
+          <span class="work__item" data-filter=".full">Fullstack</span>
+          <span class="work__item" data-filter=".front">Frontend</span>
+        </div>
+
+        <div class="work__container container grid">
+          <div class="work__card mix front">
+            <img
+              src="https://i.imgur.com/X2nyvYr.png"
+              alt=""
+              class="work__img"
+            />
+
+            <h3 class="work__title">Frontend</h3>
+
+            <a
+              href="https://xadrez-react.vercel.app"
+              target="_blank"
+              class="work__button"
+            >
+              xadrez react aleatório
+              <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card mix front">
+            <img
+              src="blob:https://vercel.com/7e24e593-aa37-4757-bf8b-4d3f05b061a3"
+              alt=""
+              class="work__img"
+            />
+
+            <h3 class="work__title">Frontend</h3>
+
+            <a
+              href="https://genesis-game-zeta.vercel.app/"
+              target="_blank"
+              class="work__button"
+            >
+              Genius Game <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card mix front">
+            <img
+              src="https://i.imgur.com/0LoHeUP.png"
+              alt=""
+              class="work__img"
+            />
+
+            <h3 class="work__title">Frontend</h3>
+
+            <a
+              href="https://cronometro-vert.vercel.app"
+              target="_blank"
+              class="work__button"
+            >
+              Cronometro <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card mix front">
+            <img
+              src="https://i.imgur.com/Bqg3wre.png"
+              alt=""
+              class="work__img"
+            />
+
+            <h3 class="work__title">Frontend</h3>
+
+            <a
+              href="https://desafio-qr-code.vercel.app"
+              target="_blank"
+              class="work__button"
+            >
+              Desafios - QR-code
+              <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card mix front">
+            <img
+              src="https://raw.githubusercontent.com/valterchess/desafio-nft/main/design/desktop-preview.jpg"
+              alt=""
+              class="work__img"
+            />
+
+            <h3 class="work__title">Frontend</h3>
+
+            <a
+              href="https://desafio-nft.vercel.app/"
+              target="_blank"
+              class="work__button"
+            >
+              Desafios - NTF <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card mix full">
+            <img
+              src="https://i.imgur.com/lCJCNkF.png"
+              alt=""
+              class="work__img"
+            />
+
+            <h3 class="work__title">Fullstack</h3>
+
+            <a
+              href="https://urbanize.vercel.app/home"
+              target="_blank"
+              class="work__button"
+            >
+              Urbanize <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card mix api">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_880267-MLB73389411362_122023-O.webp" alt="" class="work__img" />
+
+            <h2>Jogo de Copos</h2>
+            <h3 class="work__title">Cozinha</h3>
+
+            <a
+              href="https://produto.mercadolivre.com.br/MLB-2188442902-jogo-de-copos-vidro-suco-agua-refri-300ml-kit-c-6pcs-_JM?attributes=COLOR_SECONDARY_COLOR:VHJhbnNwYXJlbnRl"
+              target="_blank"
+              class="work__button"
+            >
+              opção de compra
+              <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card mix api">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_679839-MLB50650306928_072022-O.webp" alt="" class="work__img" />
+
+            <h2>Jogo de talheres</h2>
+            <h3 class="work__title">Cozinha</h3>
+
+            <a
+              href="https://produto.mercadolivre.com.br/MLB-1584732988-faqueiro-tramontina-buzios-em-aco-inox-com-detalhe-24-pecas-_JM?attributes=COLOR_SECONDARY_COLOR:Q2luemE="
+              target="_blank"
+              class="work__button"
+            >
+              opção de compra
+              <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card mix api">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_643405-MLB72183880016_102023-O.webp" alt="" class="work__img" />
+
+            <h2>Jogo de talheres</h2>
+            <h3 class="work__title">Cozinha</h3>
+
+            <a
+              href="https://produto.mercadolivre.com.br/MLB-2795822910-jogo-panelas-prime-aluminio-antiaderente-8-pecas-tampa-vidro-_JM?attributes=COLOR_SECONDARY_COLOR:R3JhZml0ZSBjb20gUm9zYQ=="
+              target="_blank"
+              class="work__button"
+            >
+              opção de compra <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card mix api">
+            <img src="assets/img/work4.jpg" alt="" class="work__img" />
+
+            <h3 class="work__title">Cozinha</h3>
+
+            <a
+              href="https://github.com/valterchess/loja-games"
+              target="_blank"
+              class="work__button"
+            >
+              loja-games <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card mix api">
+            <img src="assets/img/work5.jpg" alt="" class="work__img" />
+
+            <h3 class="work__title">Cozinha</h3>
+
+            <a
+              href="https://github.com/valterchess/farmacia-gen"
+              target="_blank"
+              class="work__button"
+            >
+              farmacia-gen <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card mix api">
+            <img src="assets/img/work1.jpg" alt="" class="work__img" />
+
+            <h3 class="work__title">Cozinha</h3>
+
+            <a
+              href="https://github.com/valterchess/farmacia-gen"
+              target="_blank"
+              class="work__button"
+            >
+              starter: TypeScript API + Nest.js
+              <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card mix api">
+            <img src="assets/img/work2.jpg" alt="" class="work__img" />
+
+            <h3 class="work__title">Cozinha</h3>
+
+            <a
+              href="https://github.com/valterchess/loteria-basica-api"
+              target="_blank"
+              class="work__button"
+            >
+              número de loteria api
+              <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+        </div>
+        <!-- -->
+      </section>
+
+      <!--=============== TESTIMONIALS ===============-->
+      <section class="testimonial section"></section>
+
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Nos mande uma mensagem de parabéns ou para mais informações</h2>
+
+        <div class="contact__info">
+            <div class="contact__card">
+              <i class="bx bxl-whatsapp contact__card-icon"></i>
+              <h3 class="contact__card-title">Whatsapp</h3>
+              <span class="contact__card-data">+55 11 95920-2877</span>
+
+              <a
+                href="https://api.whatsapp.com/send?phone=5511959202877&text=Olá, Parabéns aos noivos!"
+                target="_blank"
+                class="contact__button"
+              >
+                Clique aqui para enviar a msg
+                <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Valter Silva</h1>
+
+        <ul class="footer__list">
+          <li>
+            <a href="#about" class="footer__link">Faça um pix para nosso casamento</a>
+          </li>
+          <li>
+            <a href="#work" class="footer__link">Lista de presentes</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <a
+            href="https://www.instagram.com/valter.silva.dev/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </ul>
+
+        <span class="footer__copy"> &#169; valter Silva. </span>
+      </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

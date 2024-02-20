@@ -1,13 +1,11 @@
-# Genesis Game
+# Portfolio Pessoal
 
 ## Sobre
 
-Game simples em css html e javscript, baseado no game genius onde 
-uma sequência de cores é mostrada na tela e você deve decorar e repetir a sequência
-a dificuldade almenta conforme o nível almenta.
-Essa é a versão inicial então está um pouco crua.
-Esse jogo foi baseado em um dos projetos da Digital Innovation One.
-Melhorei alguns detalhes de funcionalidade e alterei alguns detalhes no estilo.
+Portfolio pessoal para compartilhar a evolução em minha carreira, para compartilhar meus projetos e que funciona como 
+ambinente de contato
+Desenvolvido inicialmente em react como um blog consumindo de uma rest api.
+Atualizado e mais sofisticado, agora está desenvolvido com as tecnologias básicas da web.
 
 ### Tecnologias/Ferramentas Utilizadas
 
@@ -19,7 +17,7 @@ Melhorei alguns detalhes de funcionalidade e alterei alguns detalhes no estilo.
 
 ### implementações futuras
 
-- Deploy
+- troca de idioma
 
 ## Autor
 
