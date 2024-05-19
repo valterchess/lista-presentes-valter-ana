@@ -22,7 +22,7 @@
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: #ecebdc;
+  --body-color: #101728;
   --container-color: hsl(var(--second-hue), 32%, 12%);
 
   /*========== Font and typography ==========*/
@@ -90,6 +90,11 @@ h1, h2, h3 {
   font-weight: var(--font-semibold);
 }
 
+.raimundo {
+  color: var(--text-color);
+  font-size: xx-large;
+}
+
 ul {
   list-style: none;
 }
@@ -137,6 +142,16 @@ body.light-theme{
   box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
 }
 
+.light-theme .about__description {
+  font-size: large;
+  text-align: start;
+  color: black;
+}
+
+.light-theme .about__description:hover{
+  transition: 10%;
+}
+
 .light-theme .nav__menu{
   background-color: hsla(var(--second-hue), 32%, 90%, .8);
 }
@@ -152,6 +167,11 @@ body.light-theme{
 .light-theme .home__social::after,
 .light-theme .footer__social-link{
   background-color: var(--title-color);
+}
+
+.light-theme .raimundo {
+  color: black;
+  font-size: xx-large;
 }
 
 .light-theme .home__social-link,
@@ -363,7 +383,7 @@ body.light-theme{
 .about__description {
   font-size: large;
   text-align: start;
-  color: black;
+  color: var(--text-color);
 }
 
 /*=============== WORK ===============*/
